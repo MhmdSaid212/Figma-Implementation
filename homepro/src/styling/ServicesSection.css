@@ -1,0 +1,318 @@
+.services-section {
+  background: white;
+  padding: 128px 0;
+}
+
+.services-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.services-header {
+  text-align: center;
+}
+
+.services-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #121826;
+}
+
+.services-description {
+  max-width: 750px;
+  margin: 24px auto 0;
+  font-size: 22px;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px 64px;
+  margin-top: 96px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  background: #243b8f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.service-title {
+  margin-top: 24px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #121826;
+}
+
+.service-text {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+.service-cta {
+  background: #29a8e2;
+  width: 400px;
+  border-radius: 30px;
+  padding: 32px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-cta h3 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.service-cta p {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.service-cta button {
+  margin-top: 32px;
+  width: fit-content;
+  background: white;
+  color: #29a8e2;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ========== MEDIA QUERIES (ADDED ONLY) ========== */
+
+/* Laptops / Small Desktops (1024px - 1200px) */
+@media (max-width: 1200px) {
+  .services-grid {
+    gap: 50px 40px;
+  }
+  
+  .services-title {
+    font-size: 52px;
+  }
+  
+  .service-title {
+    font-size: 28px;
+  }
+  
+  .service-cta {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .service-cta h3 {
+    font-size: 36px;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .services-section {
+    padding: 80px 0;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 40px;
+    margin-top: 60px;
+  }
+  
+  .services-title {
+    font-size: 48px;
+  }
+  
+  .services-description {
+    font-size: 20px;
+    padding: 0 16px;
+  }
+  
+  .service-title {
+    font-size: 28px;
+  }
+  
+  .service-text {
+    font-size: 16px;
+  }
+  
+  .service-cta {
+    width: 100%;
+    max-width: 100%;
+    padding: 28px;
+  }
+  
+  .service-cta h3 {
+    font-size: 32px;
+  }
+  
+  .service-cta p {
+    font-size: 16px;
+  }
+  
+  .service-cta button {
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 0;
+  }
+  
+  .services-container {
+    padding: 0 16px;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 48px;
+  }
+  
+  .services-title {
+    font-size: 36px;
+  }
+  
+  .services-description {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+  
+  .service-card {
+    text-align: center;
+    align-items: center;
+  }
+  
+  .service-title {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+  
+  .service-text {
+    font-size: 16px;
+    max-width: 90%;
+  }
+  
+  .service-icon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .service-icon img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .service-cta {
+    text-align: center;
+    align-items: center;
+    padding: 32px 24px;
+  }
+  
+  .service-cta h3 {
+    font-size: 28px;
+  }
+  
+  .service-cta button {
+    margin-top: 24px;
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}
+
+/* Small Phones (up to 480px) */
+@media (max-width: 480px) {
+  .services-section {
+    padding: 48px 0;
+  }
+  
+  .services-title {
+    font-size: 28px;
+  }
+  
+  .services-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .service-title {
+    font-size: 24px;
+  }
+  
+  .service-text {
+    font-size: 14px;
+  }
+  
+  .service-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .service-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .service-cta {
+    padding: 24px 20px;
+    border-radius: 24px;
+  }
+  
+  .service-cta h3 {
+    font-size: 24px;
+  }
+  
+  .service-cta p {
+    font-size: 14px;
+  }
+  
+  .service-cta button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Phones (up to 360px) */
+@media (max-width: 360px) {
+  .services-title {
+    font-size: 24px;
+  }
+  
+  .services-description {
+    font-size: 14px;
+  }
+  
+  .service-title {
+    font-size: 22px;
+  }
+  
+  .service-cta h3 {
+    font-size: 22px;
+  }
+}

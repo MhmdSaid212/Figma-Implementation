@@ -1,0 +1,409 @@
+/* ========== HERO SECTION ========== */
+
+.hero {
+  background: #18245b;
+  color: white;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hero-top-left-bar {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  transform: translateX(-70%);
+  margin-top: 830px;
+  width: 400px;
+}
+
+.hero-top-right-bar {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  transform: translateX(70%);
+  margin-top: 830px;
+  width: 400px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+  position: relative;
+}
+
+.hero-image-wrapper {
+  height: 500px;
+}
+
+.hero-left {
+  transform: translateX(-70px);
+}
+
+.hero-right {
+  transform: translateX(70px);
+}
+
+.hero-image {
+  width: 100%;
+  height: 150%;
+  object-fit: cover;
+  border-radius: 24px;
+  margin-top: -90px;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-subtitle {
+  color: #c7cedf;
+  font-size: 18px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero-features {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 32px;
+  color: #42cfff;
+  font-size: 18px;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+
+.hero-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.hero-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #29a8e2;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-button-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  color: #29a8e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-benefits {
+  margin-top: 130px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 24px;
+}
+
+.benefit-item span {
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.benefit-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #243b8f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.benefit-divider {
+  width: 1px;
+  height: 48px;
+  background: #30438d;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 1200px) {
+  .hero-grid {
+    gap: 20px;
+  }
+  
+  .hero-left {
+    transform: translateX(-40px);
+  }
+  
+  .hero-right {
+    transform: translateX(40px);
+  }
+  
+  .hero-title {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .hero-left,
+  .hero-right {
+    display: none;
+  }
+  
+  .hero-image {
+    margin-top: 0;
+    height: auto;
+    max-height: 400px;
+  }
+  
+  .hero-image-wrapper {
+    height: auto;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+  }
+  
+  .hero-top-left-bar,
+  .hero-top-right-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 0 16px;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+  }
+  
+  .hero-subtitle {
+    font-size: 14px;
+    gap: 20px;
+  }
+  
+  .hero-features {
+    gap: 16px;
+    font-size: 14px;
+  }
+  
+  .hero-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .hero-button-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .hero-image {
+    max-height: 320px;
+  }
+  
+  /* Change benefits from flex to grid */
+  .hero-benefits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    margin-top: 50px;
+    padding: 0;
+    gap: 0;
+  }
+  
+  /* Hide the original dividers */
+  .benefit-divider {
+    display: none;
+  }
+  
+  /* Style each benefit item */
+  .benefit-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    padding: 24px 16px;
+    margin: 0;
+    background: #18245b;
+  }
+  
+  /* Add horizontal line using pseudo-element */
+  .hero-benefits::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #a0a0a0;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+  
+  /* Add vertical line using pseudo-element */
+  .hero-benefits::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background: #a0a0a0;
+    z-index: 1;
+    transform: translateX(-50%);
+  }
+  
+  /* Make sure benefit items appear above the lines */
+  .benefit-item {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .benefit-item span {
+    font-size: 14px;
+  }
+  
+  .benefit-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 28px;
+  }
+  
+  .hero-subtitle {
+    font-size: 12px;
+    gap: 12px;
+  }
+  
+  .hero-features {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .hero-image {
+    max-height: 250px;
+  }
+  
+  .hero-benefits {
+    margin-top: 40px;
+  }
+  
+  .hero-benefits::before,
+  .hero-benefits::after {
+    background: #b0b0b0;
+  }
+  
+  .benefit-item {
+    padding: 16px 12px;
+  }
+  
+  .benefit-item span {
+    font-size: 12px;
+  }
+  
+  .benefit-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .hero-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 24px;
+  }
+  
+  .hero-subtitle {
+    font-size: 10px;
+    gap: 8px;
+  }
+  
+  .hero-image {
+    max-height: 200px;
+  }
+  
+  .benefit-item {
+    padding: 12px 8px;
+  }
+  
+  .benefit-item span {
+    font-size: 10px;
+  }
+  
+  .benefit-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+  }
+  
+  .hero-grid {
+    gap: 20px;
+  }
+  
+  .hero-image {
+    max-height: 250px;
+  }
+  
+  .hero-benefits {
+    margin-top: 30px;
+  }
+}

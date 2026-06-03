@@ -1,0 +1,392 @@
+.reviews-section {
+  background: white;
+  padding: 128px 0;
+}
+
+.reviews-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.reviews-title {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #121826;
+}
+
+.reviews-trustpilot {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.reviews-trustpilot img {
+  height: 56px;
+}
+
+.reviews-divider {
+  margin-top: 32px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.review-wrapper {
+  position: relative;
+  margin-top: 56px;
+}
+
+.review-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.review-arrow-left {
+  left: 0;
+}
+
+.review-arrow-right {
+  right: 0;
+}
+
+.review-arrow img {
+  width: 56px;
+  height: 56px;
+}
+
+.review-content {
+  max-width: 768px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.review-text {
+  font-size: 24px;
+  line-height: 1.8;
+  color: #6b7280;
+}
+
+.reviewer {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.reviewer-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewer-info {
+  text-align: left;
+}
+
+.reviewer-name {
+  font-size: 32px;
+  font-weight: 700;
+  color: #121826;
+}
+
+.review-stars {
+  margin-top: 8px;
+  height: 32px;
+}
+
+.reviews-dots {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-dots img {
+  height: 16px;
+}
+
+/* ========== MEDIA QUERIES (ADDED ONLY) ========== */
+
+/* Laptops / Small Desktops (1024px - 1200px) */
+@media (max-width: 1200px) {
+  .reviews-title {
+    font-size: 52px;
+  }
+  
+  .review-text {
+    font-size: 22px;
+  }
+  
+  .reviewer-name {
+    font-size: 28px;
+  }
+  
+  .review-arrow img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .reviews-section {
+    padding: 80px 0;
+  }
+  
+  .reviews-title {
+    font-size: 48px;
+  }
+  
+  .reviews-trustpilot {
+    margin-top: 60px;
+  }
+  
+  .reviews-trustpilot img {
+    height: 48px;
+  }
+  
+  .review-wrapper {
+    margin-top: 40px;
+  }
+  
+  .review-text {
+    font-size: 20px;
+    line-height: 1.6;
+    padding: 0 40px;
+  }
+  
+  .reviewer {
+    margin-top: 40px;
+    gap: 20px;
+  }
+  
+  .reviewer-image {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .reviewer-name {
+    font-size: 26px;
+  }
+  
+  .review-stars {
+    height: 28px;
+  }
+  
+  .reviews-dots {
+    margin-top: 60px;
+  }
+  
+  .review-arrow-left {
+    left: -20px;
+  }
+  
+  .review-arrow-right {
+    right: -20px;
+  }
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+  .reviews-section {
+    padding: 60px 0;
+  }
+  
+  .reviews-container {
+    padding: 0 16px;
+  }
+  
+  .reviews-title {
+    font-size: 36px;
+  }
+  
+  .reviews-trustpilot {
+    margin-top: 40px;
+  }
+  
+  .reviews-trustpilot img {
+    height: 40px;
+  }
+  
+  .reviews-divider {
+    margin-top: 24px;
+  }
+  
+  .review-wrapper {
+    margin-top: 32px;
+  }
+  
+  .review-text {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 0 30px;
+  }
+  
+  .reviewer {
+    margin-top: 32px;
+    gap: 16px;
+  }
+  
+  .reviewer-image {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .reviewer-name {
+    font-size: 22px;
+  }
+  
+  .review-stars {
+    height: 24px;
+  }
+  
+  .reviews-dots {
+    margin-top: 48px;
+  }
+  
+  .review-arrow img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .review-arrow-left {
+    left: -10px;
+  }
+  
+  .review-arrow-right {
+    right: -10px;
+  }
+}
+
+/* Small Phones (up to 480px) */
+@media (max-width: 480px) {
+  .reviews-section {
+    padding: 48px 0;
+  }
+  
+  .reviews-title {
+    font-size: 28px;
+  }
+  
+  .reviews-trustpilot {
+    margin-top: 32px;
+  }
+  
+  .reviews-trustpilot img {
+    height: 32px;
+  }
+  
+  .review-text {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 20px;
+  }
+  
+  .reviewer {
+    margin-top: 28px;
+    gap: 12px;
+  }
+  
+  .reviewer-image {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .reviewer-name {
+    font-size: 18px;
+  }
+  
+  .review-stars {
+    height: 20px;
+  }
+  
+  .reviews-dots {
+    margin-top: 40px;
+  }
+  
+  .reviews-dots img {
+    height: 12px;
+  }
+  
+  .review-arrow img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .review-arrow-left {
+    left: -8px;
+  }
+  
+  .review-arrow-right {
+    right: -8px;
+  }
+}
+
+/* Extra Small Phones (up to 360px) */
+@media (max-width: 360px) {
+  .reviews-title {
+    font-size: 24px;
+  }
+  
+  .review-text {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  
+  .reviewer {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  
+  .reviewer-info {
+    text-align: center;
+  }
+  
+  .reviewer-name {
+    font-size: 18px;
+  }
+  
+  .review-stars {
+    height: 18px;
+  }
+  
+  .review-arrow img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .review-arrow-left {
+    left: -5px;
+  }
+  
+  .review-arrow-right {
+    right: -5px;
+  }
+}
+
+/* Landscape mode on phones */
+@media (max-width: 768px) and (orientation: landscape) {
+  .reviews-section {
+    padding: 48px 0;
+  }
+  
+  .review-text {
+    font-size: 18px;
+    padding: 0 60px;
+  }
+  
+  .reviewer {
+    margin-top: 24px;
+  }
+  
+  .reviews-dots {
+    margin-top: 32px;
+  }
+}

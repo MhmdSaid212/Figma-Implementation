@@ -1,0 +1,335 @@
+.cta-section {
+  padding: 0;
+}
+
+.cta-card {
+  position: relative;
+  background: #18276b;
+  min-height: 560px;
+  overflow: hidden;
+}
+
+.cta-topbar {
+  position: absolute;
+  top: 0;
+  left: 128px;
+  z-index: 20;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 10;
+  width: 45%;
+  padding: 96px 64px;
+}
+
+.cta-title {
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.cta-features {
+  display: flex;
+  gap: 48px;
+  margin-top: 40px;
+}
+
+.cta-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cta-check {
+  color: #29a8e2;
+  font-size: 20px;
+}
+
+.cta-feature-text {
+  color: #29a8e2;
+  font-size: 24px;
+}
+
+.cta-button {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 999px;
+  background: #29a8e2;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cta-button-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  color: #29a8e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-man {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 90%;
+  object-fit: contain;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 1200px) {
+  .cta-content {
+    width: 50%;
+    padding: 80px 48px;
+  }
+  
+  .cta-title {
+    font-size: 52px;
+  }
+  
+  .cta-feature-text {
+    font-size: 20px;
+  }
+  
+  .cta-button {
+    font-size: 20px;
+    padding: 16px 32px;
+  }
+  
+  .cta-topbar {
+    left: 80px;
+    width: 200px;
+  }
+  
+  .cta-man {
+    height: 85%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cta-section {
+    padding: 0;
+  }
+  
+  .cta-content {
+    width: 55%;
+    padding: 60px 40px;
+  }
+  
+  .cta-title {
+    font-size: 44px;
+  }
+  
+  .cta-features {
+    gap: 32px;
+    margin-top: 32px;
+  }
+  
+  .cta-feature-text {
+    font-size: 18px;
+  }
+  
+  .cta-check {
+    font-size: 18px;
+  }
+  
+  .cta-button {
+    margin-top: 40px;
+    font-size: 18px;
+    padding: 14px 28px;
+    gap: 16px;
+  }
+  
+  .cta-button-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .cta-topbar {
+    left: 40px;
+    width: 160px;
+  }
+  
+  .cta-man {
+    height: 75%;
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 0;
+  }
+  
+  .cta-card {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cta-content {
+    width: 100%;
+    padding: 48px 24px;
+    text-align: center;
+    order: 1;
+  }
+  
+  .cta-title {
+    font-size: 36px;
+  }
+  
+  .cta-features {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 32px;
+  }
+  
+  .cta-feature {
+    justify-content: center;
+  }
+  
+  .cta-feature-text {
+    font-size: 18px;
+  }
+  
+  .cta-button {
+    margin: 40px auto 0;
+    justify-content: center;
+    font-size: 18px;
+    padding: 14px 28px;
+    width: fit-content;
+  }
+  
+  /* Center the topbar on mobile */
+  .cta-topbar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    z-index: 20;
+  }
+  
+  .cta-man {
+    position: relative;
+    height: auto;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    order: 2;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-section {
+    padding: 0;
+  }
+  
+  .cta-content {
+    padding: 40px 20px;
+  }
+  
+  .cta-title {
+    font-size: 28px;
+  }
+  
+  .cta-features {
+    gap: 16px;
+    margin-top: 24px;
+  }
+  
+  .cta-feature {
+    gap: 8px;
+  }
+  
+  .cta-check {
+    font-size: 16px;
+  }
+  
+  .cta-feature-text {
+    font-size: 16px;
+  }
+  
+  .cta-button {
+    margin-top: 32px;
+    font-size: 16px;
+    padding: 12px 24px;
+    gap: 12px;
+  }
+  
+  .cta-button-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .cta-topbar {
+    width: 100px;
+  }
+  
+  .cta-man {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 360px) {
+  .cta-title {
+    font-size: 24px;
+  }
+  
+  .cta-feature-text {
+    font-size: 14px;
+  }
+  
+  .cta-check {
+    font-size: 14px;
+  }
+  
+  .cta-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  
+  .cta-button-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .cta-topbar {
+    width: 80px;
+  }
+  
+  .cta-man {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .cta-card {
+    display: block;
+  }
+  
+  .cta-man {
+    position: relative;
+    max-height: 300px;
+    width: auto;
+    margin: 0 auto;
+  }
+  
+  .cta-topbar {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

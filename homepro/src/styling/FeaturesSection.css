@@ -1,0 +1,294 @@
+.features {
+  padding: 96px 0;
+}
+
+.features-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.features-card {
+  position: relative;
+  background: #1a276b;
+  border-radius: 24px;
+  padding: 64px;
+  width: 100%;
+}
+
+.features-bar-left {
+  position: absolute;
+  left: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.features-bar-right {
+  position: absolute;
+  right: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.features-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.features-title {
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.features-description {
+  color: #d1d5db;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.features-divider {
+  margin: 48px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 128px;
+  row-gap: 64px;
+}
+
+.feature-item {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.feature-title {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.feature-text {
+  margin-top: 12px;
+  color: #d1d5db;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ========== YOUR EXISTING MEDIA QUERIES (UNCHANGED) ========== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .features-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .features-title {
+    font-size: 48px;
+  }
+
+  .features-card {
+    padding: 48px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .features {
+    padding: 64px 0;
+  }
+
+  .features-container {
+    padding: 0 20px;
+  }
+
+  .features-card {
+    padding: 32px 24px;
+  }
+
+  .features-title {
+    font-size: 36px;
+  }
+
+  .features-description {
+    font-size: 16px;
+  }
+
+  .feature-item {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .feature-title {
+    font-size: 24px;
+  }
+
+  .feature-text {
+    font-size: 16px;
+  }
+
+  .features-bar-left,
+  .features-bar-right {
+    display: none;
+  }
+}
+
+/* ========== ADDITIONAL MEDIA QUERIES FOR BETTER COVERAGE ========== */
+
+/* Large Desktops (1200px - 1600px) */
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .features-grid {
+    column-gap: 80px;
+  }
+  
+  .features-title {
+    font-size: 52px;
+  }
+}
+
+/* Small Laptops (1024px - 1200px) */
+@media (max-width: 1200px) and (min-width: 1025px) {
+  .features-grid {
+    column-gap: 60px;
+  }
+  
+  .features-title {
+    font-size: 48px;
+  }
+  
+  .features-description {
+    font-size: 18px;
+  }
+  
+  .feature-title {
+    font-size: 26px;
+  }
+}
+
+/* Small Phones (up to 480px) */
+@media (max-width: 480px) {
+  .features {
+    padding: 48px 0;
+  }
+  
+  .features-container {
+    padding: 0 16px;
+  }
+  
+  .features-card {
+    padding: 24px 20px;
+    border-radius: 20px;
+  }
+  
+  .features-title {
+    font-size: 28px;
+  }
+  
+  .features-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .features-divider {
+    margin: 32px 0;
+  }
+  
+  .features-grid {
+    gap: 32px;
+  }
+  
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .feature-title {
+    font-size: 20px;
+  }
+  
+  .feature-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 8px;
+  }
+  
+  .feature-item {
+    gap: 12px;
+  }
+  
+  .features-bar-left,
+  .features-bar-right {
+    display: none;
+  }
+}
+
+/* Extra Small Phones (up to 360px) */
+@media (max-width: 360px) {
+  .features {
+    padding: 40px 0;
+  }
+  
+  .features-card {
+    padding: 20px 16px;
+  }
+  
+  .features-title {
+    font-size: 24px;
+  }
+  
+  .features-description {
+    font-size: 13px;
+  }
+  
+  .feature-title {
+    font-size: 18px;
+  }
+  
+  .feature-text {
+    font-size: 13px;
+  }
+  
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Landscape mode on phones */
+@media (max-width: 768px) and (orientation: landscape) {
+  .features {
+    padding: 40px 0;
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  
+  .feature-item {
+    flex-direction: row;
+  }
+  
+  .features-title {
+    font-size: 32px;
+  }
+}

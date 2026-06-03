@@ -1,0 +1,312 @@
+.how-it-works {
+  padding: 128px 0;
+}
+
+.how-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 96px;
+  align-items: center;
+}
+
+/* LEFT SIDE */
+
+.how-image-wrapper {
+  position: relative;
+}
+
+.how-background {
+  width: 100%;
+  border-radius: 40px;
+  display: block;
+}
+
+.how-worker {
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+  width: 115%;
+  max-width: none;
+}
+
+.how-badge {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 112px;
+  height: 112px;
+}
+
+/* RIGHT SIDE */
+
+.how-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #121826;
+}
+
+.how-steps {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.how-step {
+  display: grid;
+  grid-template-columns: 60px 220px 1fr;
+  gap: 32px;
+}
+
+.step-number {
+  font-size: 64px;
+  font-weight: 700;
+  color: #9ca3af;
+}
+
+.step-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #121826;
+}
+
+.step-description {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #6b7280;
+}
+
+/* ========== MEDIA QUERIES (ADDED ONLY) ========== */
+
+/* Laptops / Small Desktops (1024px - 1200px) */
+@media (max-width: 1200px) {
+  .how-grid {
+    gap: 60px;
+  }
+  
+  .how-title {
+    font-size: 52px;
+  }
+  
+  .how-step {
+    grid-template-columns: 50px 200px 1fr;
+    gap: 24px;
+  }
+  
+  .step-number {
+    font-size: 52px;
+  }
+  
+  .step-title {
+    font-size: 28px;
+  }
+  
+  .step-description {
+    font-size: 18px;
+  }
+  
+  .how-badge {
+    right: 40px;
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .how-it-works {
+    padding: 80px 0;
+  }
+  
+  .how-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  
+  .how-title {
+    font-size: 48px;
+    text-align: center;
+  }
+  
+  .how-steps {
+    margin-top: 48px;
+    gap: 48px;
+  }
+  
+  .how-step {
+    grid-template-columns: 50px 1fr;
+    gap: 20px;
+  }
+  
+  .step-number {
+    font-size: 48px;
+  }
+  
+  .step-title {
+    font-size: 28px;
+  }
+  
+  .step-description {
+    font-size: 18px;
+    grid-column: 2 / -1;
+  }
+  
+  .how-image-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .how-worker {
+    left: -10%;
+    width: 110%;
+  }
+  
+  .how-badge {
+    right: 20px;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+  .how-it-works {
+    padding: 60px 0;
+  }
+  
+  .how-container {
+    padding: 0 16px;
+  }
+  
+  .how-grid {
+    gap: 40px;
+  }
+  
+  .how-title {
+    font-size: 36px;
+  }
+  
+  .how-steps {
+    margin-top: 40px;
+    gap: 40px;
+  }
+  
+  .how-step {
+    grid-template-columns: 45px 1fr;
+    gap: 16px;
+  }
+  
+  .step-number {
+    font-size: 40px;
+  }
+  
+  .step-title {
+    font-size: 24px;
+  }
+  
+  .step-description {
+    font-size: 16px;
+    line-height: 1.6;
+    grid-column: 2 / -1;
+  }
+  
+  .how-image-wrapper {
+    max-width: 400px;
+  }
+  
+  .how-background {
+    border-radius: 30px;
+  }
+  
+  .how-worker {
+    left: -5%;
+    width: 105%;
+  }
+  
+  .how-badge {
+    right: 10px;
+    width: 65px;
+    height: 65px;
+  }
+}
+
+/* Small Phones (up to 480px) */
+@media (max-width: 480px) {
+  .how-it-works {
+    padding: 48px 0;
+  }
+  
+  .how-title {
+    font-size: 28px;
+  }
+  
+  .how-steps {
+    gap: 32px;
+  }
+  
+  .how-step {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .step-number {
+    font-size: 36px;
+  }
+  
+  .step-title {
+    font-size: 22px;
+  }
+  
+  .step-description {
+    font-size: 14px;
+    grid-column: 1 / -1;
+  }
+  
+  .how-image-wrapper {
+    max-width: 320px;
+  }
+  
+  .how-background {
+    border-radius: 20px;
+  }
+  
+  .how-badge {
+    right: 5px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Extra Small Phones (up to 360px) */
+@media (max-width: 360px) {
+  .how-title {
+    font-size: 24px;
+  }
+  
+  .step-number {
+    font-size: 32px;
+  }
+  
+  .step-title {
+    font-size: 20px;
+  }
+  
+  .how-image-wrapper {
+    max-width: 280px;
+  }
+  
+  .how-badge {
+    width: 45px;
+    height: 45px;
+    right: 0;
+  }
+}
